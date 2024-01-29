@@ -4,7 +4,7 @@ package recursion;
  * Use recursive backtracking to determine if an array of values can be split
  * into two groups such that both groups have the same sum.
  * 
- * @author Grant Braught
+ * @author William Goble
  * @author Dickinson College
  */
 public class SplitArray {
