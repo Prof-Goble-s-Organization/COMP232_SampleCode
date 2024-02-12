@@ -10,6 +10,7 @@ package analysis;
  * @version Jan 31, 2024
  */
 public class DoubleArrayEntries {
+    
     public static void doubleArrayEntriesLong(int[] arr) {
         int len = arr.length;
         for(int i = 0; i < len; i++) {

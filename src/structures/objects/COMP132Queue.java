@@ -7,7 +7,7 @@ package structures.objects;
  * @author Dickinson College
  * @version Feb 8, 2024
  */
-public interface COM132Queue {
+public interface COMP132Queue {
     public void add(Object obj);
 
     public Object remove();

@@ -1,6 +1,6 @@
 package structures.objects;
 
-public class COMP132LinkedQueue implements COM132Queue {
+public class COMP132LinkedQueue implements COMP132Queue {
     private COMP132List elements;
 
     public COMP132LinkedQueue() {
