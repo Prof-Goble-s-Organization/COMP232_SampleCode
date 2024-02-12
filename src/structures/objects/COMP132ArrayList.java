@@ -1,7 +1,5 @@
 package structures.objects;
 
-import java.lang.reflect.InaccessibleObjectException;
-
 public class COMP132ArrayList implements COMP132List{
     private static final int INITIAL_CAPACITY = 10;
 
@@ -84,7 +82,7 @@ public class COMP132ArrayList implements COMP132List{
      *          if index < 0 || index >= size()
      */
     public void insert(int index, Object element) throws IndexOutOfBoundsException {
-        if (index < 0 || index >= currentSize) {
+        if (index < 0 || index > currentSize) {
             throw new IndexOutOfBoundsException("accessed " + index + "but size is " + currentSize);
         } else {
             // If the array is full, double its size
@@ -108,8 +106,8 @@ public class COMP132ArrayList implements COMP132List{
 
     public Object remove(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= currentSize) {
-            throw new InaccessibleObjectException("accessed " + index 
-            + " but size is " + currentSize);
+            throw new IndexOutOfBoundsException("accessed " + index 
+                        + " but size is " + currentSize);
         } else {
             Object target = listElements[index];
 
