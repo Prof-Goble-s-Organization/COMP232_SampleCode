@@ -57,7 +57,7 @@ public class GenericMethods {
 		// linearSearchList(idllInt, 32);	// no good!
 
 		/*
-		 * using a CS232Iterable object containing any type other than string
+		 * using a MyIterable object containing any type other than string
 		 * won't work.
 		 */
 	}
@@ -108,6 +108,6 @@ public class GenericMethods {
 		MyIterableDoublyLinkedList<Integer> idllInt = new MyIterableDoublyLinkedList<Integer>();
 		genericLinearSearchList(idllInt, 32);
 
-		// or a CS232Iterable object that contains any other type.
+		// or a MyIterable object that contains any other type.
 	}
 }

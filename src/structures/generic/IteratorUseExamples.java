@@ -57,8 +57,8 @@ public class IteratorUseExamples {
 
 		/*
 		 * NOTE: Can't do a traversal of the ArrayList using an iterator because
-		 * the CS232ArrayList class in the CS232Sampes.linear.generic package
-		 * does not implement CS232Iterable. That is a HW question! So you could
+		 * the MyArrayList class in the CS232Sampes.structures.generic package
+		 * does not implement MyIterable. That is a HW question! So you could
 		 * try this out after completing the homework if you like.
 		 */
 	}

@@ -1,5 +1,24 @@
 package structures.generic;
 
+/**
+ * A generic container that can store an object of any type. Compare this class
+ * to the ObjectBox class in the linear.object package to see how the same
+ * functionality is accomplished using Object references, and the issues that
+ * can result.
+ * 
+ * @author William Goble
+ * @author Dickinson College
+ * @version Feb 12, 2024
+ */
+
+/*
+ * The <T> is a "Type Parameter". It will take on a specified type when an
+ * object is created. For example, the line:
+ * 
+ * GenericBox<String> gp = new GenericBox<String>();
+ * 
+ * results in T taking on the type String.
+ */
 public class GenericBox<T> {
     private T value;
     

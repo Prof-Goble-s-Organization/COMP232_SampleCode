@@ -11,9 +11,9 @@ public class MyIterableDoublyLinkedListTest extends
 		MyDoublyLinkedListTest {
 
 	/*
-	 * Because the tests in CS232DoublyLinkedListTest all use the CS232List
+	 * Because the tests in MyDoublyLinkedListTest all use the MyList
 	 * interface this class will inherit all of those tests and use the
-	 * CS232IterableDoublyLinkedList instead! Some of those tests will fail on
+	 * MyIterableDoublyLinkedList instead! Some of those tests will fail on
 	 * the sample implementation because of unimplemented mehtods (See the HW!)
 	 */
 

@@ -1,5 +1,13 @@
 package structures.objects;
 
+/**
+ * List interface that defines the operations supported by all of the
+ * implementations of the List ADT.
+ * 
+ * @author William Goble
+ * @author Dickinson College
+ * @version Feb 8, 2024
+ */
 public interface COMP132List {
     /**
      * Get the current size of the list

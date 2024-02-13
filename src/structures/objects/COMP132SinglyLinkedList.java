@@ -1,20 +1,46 @@
 package structures.objects;
 
+/**
+ * An implementation of the List interface backed with a singly linked list of
+ * Objects.
+ * 
+ * @author William Goble
+ * @author Dickinson College
+ * @version Feb 8, 2024
+ */
 public class COMP132SinglyLinkedList implements COMP132List {
+    /*
+     * This is a reference to the first node in the list.  If the list is
+     * empty then this reference will be null.
+     */
     private SinglyLinkedNode head;
+    /*
+     * This is a reference to the last node in the list.  If the list is
+     * empty then this reference will be null.  If there is one node in the list
+     * then head and tail will refer to the same node.
+     */
     private SinglyLinkedNode tail;
     private int currentSize;
 
+    /**
+     * Construct a new SinglyLinkedListBackedList.
+     */
     public COMP132SinglyLinkedList() {
         head = null;
         tail = null;
         currentSize = 0;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public int size() {
         return currentSize;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public void add(Object element) {
         SinglyLinkedNode newNode = new SinglyLinkedNode(element);
 
@@ -29,6 +55,9 @@ public class COMP132SinglyLinkedList implements COMP132List {
         currentSize++;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public Object get(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= currentSize) {
             throw new IndexOutOfBoundsException("tried to access " + index 
@@ -39,6 +68,10 @@ public class COMP132SinglyLinkedList implements COMP132List {
         }
     }
 
+    /*
+     * Get the node at the specified index by walking down the chain of
+     * nodes to the index.
+     */
     private SinglyLinkedNode getNode(int index) {
         SinglyLinkedNode node = head;
 
@@ -50,6 +83,9 @@ public class COMP132SinglyLinkedList implements COMP132List {
         return node;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public void set(int index, Object element) throws IndexOutOfBoundsException {
         if (index < 0 || index >= currentSize) {
             throw new IndexOutOfBoundsException("tried to set " + index 
@@ -60,6 +96,9 @@ public class COMP132SinglyLinkedList implements COMP132List {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public void insert(int index, Object element) throws IndexOutOfBoundsException {
         if (index < 0 || index >= currentSize) {
             throw new IndexOutOfBoundsException("tried to set " + index 
@@ -86,6 +125,9 @@ public class COMP132SinglyLinkedList implements COMP132List {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public Object remove(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= currentSize) {
             throw new IndexOutOfBoundsException("tried to set " + index 

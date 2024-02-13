@@ -1,5 +1,12 @@
 package structures.objects;
 
+/**
+ * An implementation of the CS132List interface backed with an array of Objects.
+ * 
+ * @author William Goble
+ * @author Dickinson College
+ * @version Feb 8, 2024
+ */
 public class COMP132ArrayList implements COMP132List{
     private static final int INITIAL_CAPACITY = 10;
 

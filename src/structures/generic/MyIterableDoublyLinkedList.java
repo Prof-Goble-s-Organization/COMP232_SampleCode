@@ -2,6 +2,18 @@ package structures.generic;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Doubly linked list implementation of the MyList interface. This
+ * implementation also implements MyIterable. It is separate from the
+ * MyDoublyLinkedList class only so that our discussion of that class would
+ * not be clouded by these details. In practice there would only be one
+ * DoublyLinked implementation of MyList and it would implement both
+ * MyList and MyIterable (i.e. this class).
+ * 
+ * @author William Goble
+ * @author Dickinson College
+ * @version Feb 8, 2024
+ */
 public class MyIterableDoublyLinkedList<E> implements MyList<E>, MyIterable<E> {
     private DLLNode head;
     private DLLNode tail;
