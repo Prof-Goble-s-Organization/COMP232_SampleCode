@@ -8,14 +8,6 @@ package tree;
  * @version Feb 27, 2024
  */
 public class PrintVisitor<K, V> implements COMP232Visitor<K, V> {
-    /**
-     * Print out the key, value pair at each node visited
-     * 
-     * @param key
-     *      The key for the current node
-     * @param value
-     *      The value at the current node
-     */
     public void visit(K key, V value) {
         System.out.println("(" + key + ", " + value + ")");
     }
